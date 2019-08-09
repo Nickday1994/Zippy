@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -8,6 +12,7 @@ body{
 .container{
     width: 720px;
     margin: 0 auto;
+    position: relative;
 }
 
 header{
@@ -93,22 +98,25 @@ header{
 
 .header-title-buttons{
     margin-top: 40px;
-    margin-bottom: 260px;
+    margin-bottom: 230px;
     display: flex;
     flex-direction: row;
 }
 
 .button{
+    display: inline-block;
     padding: 17px 27px;
     background-color:#62497c;
     color: white;
     border-radius: 4px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .button:hover{
     background-color:#ffe26d;
     color: black;
+    box-shadow: 0 0 2px 0 #ffe26d;
 }
 .gap5{
     margin-right: 5px;
@@ -116,12 +124,10 @@ header{
 
 
 
-
-
-.welcome-h2{
+.section-title{
     padding: 0;
     margin: 0;
-    margin-top: 75px;
+    margin-top: 45px;
     font-size: 44px;
     font-weight: bold;
     text-align: center;
@@ -154,12 +160,21 @@ header{
     justify-content: space-between;
 }
 
+
 .welcome-item{
     width: 163px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
+}
+
+hr{
+    margin-top: 58px;
+    height: 2px;
+    background-color:#e7e7e7;
+    outline: none;
+    border:none;
 }
 
 
@@ -185,3 +200,144 @@ header{
     font-size: 14px;
     color:#a1a1a1;
 }
+
+
+.project-items{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.project-item{
+    flex-basis: 350px;
+    background-color:#efefef;
+    overflow: hidden;
+    
+}
+
+.project-item img{
+    transition: 0.4s;
+}
+
+
+.project-item:hover{
+    background-color:#ffe26d;
+}
+.project-item:hover img{
+    transform: scale(1.1);
+}
+
+.project-title{
+    margin: 45px 45px 0 45px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project-description{
+    margin: 15px 45px 0 45px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+.button-project{
+    margin: 15px auto 46px 45px;
+    background-color:white;
+    color: black;
+}
+
+.button-project:hover{
+    background-color:#62497c;
+    color: white;
+}
+
+.prices{
+    padding-bottom: 90px;
+}
+
+.price-items{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price-item{
+    position: relative;
+}
+
+
+.price-item::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: -70px;
+    display: block;
+    height: 100%;
+    width: 2px;
+    background-color:#e7e7e7;
+
+    
+}
+
+.price-item:last-child::before{
+    display: none;
+}
+
+
+
+
+.price-item ul,.price-item li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.price-item-title{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#9d9d9d;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.price-item ul>li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.price-item ul{
+    margin-bottom: 22px;
+}
+
+.button-price{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
