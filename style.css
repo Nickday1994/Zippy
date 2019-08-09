@@ -101,6 +101,7 @@ header{
 .button{
     padding: 17px 27px;
     background-color:#62497c;
+    color: white;
     border-radius: 4px;
     font-size: 12px;
 }
@@ -111,4 +112,76 @@ header{
 }
 .gap5{
     margin-right: 5px;
+}
+
+
+
+
+
+.welcome-h2{
+    padding: 0;
+    margin: 0;
+    margin-top: 75px;
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.welcome-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.welcome-description p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+.welcome-umbrella{
+    margin-left:70px;
+}
+
+.welcome-items{
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.welcome-item{
+    width: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+
+.welcome-item-title{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#62497c;
+    text-align: center;
+}
+
+.welcome-item-description{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color:#a1a1a1;
 }
