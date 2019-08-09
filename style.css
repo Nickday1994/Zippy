@@ -1,0 +1,114 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+
+.container{
+    width: 720px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #bdbdbd;
+    padding-top: 40px;
+    background: url(img/header-background.png) 50% 75% no-repeat;
+    background-size: cover;
+   
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-top: -10px;
+}
+
+.logo a{
+    color: white; 
+    list-style: none;
+    font-size: 30px;
+    font-weight: 800; 
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;    
+}
+
+.menu li{
+    margin-right: 40px;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: #ffe26d;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header-title h2,.header-title p{
+    margin: 0;
+    padding: 0;
+}
+
+.header-title h2{
+    margin-top: 120px;
+    font-size: 41px;
+    font-weight: 800;
+    line-height: auto;
+}
+
+.header-title p{
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.header-title-buttons{
+    margin-top: 40px;
+    margin-bottom: 260px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    padding: 17px 27px;
+    background-color:#62497c;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.button:hover{
+    background-color:#ffe26d;
+    color: black;
+}
+.gap5{
+    margin-right: 5px;
+}
