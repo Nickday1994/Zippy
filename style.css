@@ -26,6 +26,7 @@ body{
 }
 
 header{
+    
     padding-top: 10px;
     background-color: #bdbdbd;
     background: url(img/header-background.png) 50% 75% no-repeat;
@@ -333,39 +334,25 @@ hr{
 }
 
 .prices{
-    padding-bottom: 90px;
+    padding-bottom: 45px;
 }
 
 .price-items{
-    margin-top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-top: 20px;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 .price-item{
+    margin-top: 25px;
+    width: 270px;
     position: relative;
 }
 
 
-.price-item::before{
-    content:"";
-    position: absolute;
-    top: 0;
-    right: -70px;
-    display: block;
-    height: 100%;
-    width: 2px;
-    background-color:#e7e7e7;
-
-    
-}
 
 .price-item:last-child::before{
     display: none;
@@ -447,9 +434,7 @@ hr{
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: center;
 }
 
 .team-item{
@@ -457,8 +442,8 @@ hr{
     -ms-flex-preferred-size: 178px;
     
         flex-basis: 178px;
-    margin: 5px;
-    margin-bottom: 65px;
+    margin: 15px;
+    margin-bottom: 45px;
 }
 
 .team-item-image{
@@ -610,13 +595,23 @@ hr{
     margin-left: 30px;
 }
 
-
+ /* -----------------------------------МЕДИА ЗАПРОСЫ------------------------------------- */
 @media (min-width : 620px ){
 
 
 }
 
 @media (min-width : 1020px){
+
+    header{
+        height: auto;
+        padding-top: 10px;
+        background-color: #bdbdbd;
+        background: url(img/header-background.png) 50% 75% no-repeat;
+        background-size: cover;
+       
+    }
+
     .container{
         width: 720px;
         margin: 0 auto;
@@ -748,6 +743,126 @@ hr{
     
     .project-button{
         margin: 15px auto 46px 45px;
+    }
+
+    .price-items{
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .price-item{
+        margin-top: 25px;
+        width: auto;
+        position: relative;
+    }
+
+    .price-item::before{
+        content:"";
+        position: absolute;
+        top: 0;
+        right: -70px;
+        display: block;
+        height: 100%;
+        width: 2px;
+        background-color:#e7e7e7;
+    
+        
+    }
+
+    .prices{
+        padding-bottom: 90px;
+    }
+
+    .zippyTeam{
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .team-item{
+    
+        -ms-flex-preferred-size: 178px;
+        
+            flex-basis: 178px;
+        margin: 5px;
+        margin-bottom: 65px;
+    }
+
+
+    .input{
+        width: 550px;
+        margin-top: 40px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+    }
+    
+    .input .row{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .input input{
+        outline: none;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 19px;
+        color:#d8d8d8;
+        padding: 13px;
+        width: 413px;
+    }
+    
+    .input-button{
+        margin-left: -5px;
+        border-radius: 0 4px 4px 0;
+    
+    }
+    
+    .row2 {
+        margin-top: 10px;
+    }
+    
+    .row2 .button{
+        margin-left: 30px;
     }
 
     
